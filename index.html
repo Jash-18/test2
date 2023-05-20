@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jaswanth Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth !important;
+      }
+
+      ::selection {
+        background-color: black;
+        color: rgb(0, 247, 255);
+      }
+      * {
+        /* border: 2px solid white; */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat Alternates", sans-serif;
+      }
+
+      body {
+        background-color: #0c134f;
+        color: #eeeeee;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="id" id="first-section">
+        <div class="leftSide navSides" id="name">Jaswanth's Portfolio</div>
+        <div class="rightSide navSides">
+          <ul class="navBar-text">
+            <li><a href="#first-section">Home</a></li>
+            <li><a href="#second-section">About Me</a></li>
+            <li><a href="#third-section">My Projects</a></li>
+            <li><a href="#fourth-section">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="leftSection sections">
+        <div>
+          Hi, My name is
+          <div class="text-color" >Jaswanth</div>
+        </div>
+        <div>and I am a passionate</div>
+        <div><span id="element" class="text-color"></span></div>
+        <div class="btnNew">
+          <a href="temp.html"><button class="btn" id="Download">Download Resume</button></a>
+          <button class="btn" id="call">Call Now</button>
+        </div>
+      </div>
+      <div class="rightSection sections">
+        <img
+          src="https://harrysdevportfolio.in/bg.png"
+          alt="Myprof"
+          width="300px"
+        />
+      </div>
+    </section>
+    <hr />
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Devloper", "Game Devloper", "App Devloper"],
+        typeSpeed: 90,
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
